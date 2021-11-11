@@ -1,0 +1,29 @@
+{
+  "name": "v-graphin-icons",
+  "version": "1.0.1",
+  "description": "v-graphin icon fonts",
+  "main": "./dist/index",
+  "scripts": {
+    "start": "father build --watch",
+    "build": "father build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanteng007/v-graphin-icons.git"
+  },
+  "keywords": [
+    "v-graphin-icons",
+    "icon",
+    "fonts"
+  ],
+  "author": "lanteng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lanteng007/v-graphin-icons/issues"
+  },
+  "homepage": "https://github.com/lanteng007/v-graphin-icons#readme",
+  "devDependencies": {
+    "father": "^2.30.11"
+  }
+}
