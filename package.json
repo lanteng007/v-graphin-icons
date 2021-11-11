@@ -1,6 +1,6 @@
 {
   "name": "v-graphin-icons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "v-graphin icon fonts",
   "main": "./dist/index",
   "scripts": {
