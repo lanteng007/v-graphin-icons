@@ -1,25 +1,16 @@
-## @antv/graphin-icons
+## v-graphin-icons
 
-[中文](./README-cn.ZH.md)
 
-Graphin's font icons
+v-graphin's font icons
 
 ## Usage
 
 ```jsx | pure
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Graphin, { Utils } from '@antv/graphin';
-import { Toolbar } from '@antv/graphin-components';
-
-// Do not forget to import CSS
-
-// font icon
-import fontLoader from '@antv/graphin-icons';
-import '@antv/graphin-icons/dist/index.css';
-
+import IconLoader from "v-graphin-icons"
+import "v-graphin-icons/dist/index.css"
+import { registerFontFamily } from "v-graphin"
 /** 加载 font icons **/
-const icons = Graphin.registerFontFamily(iconLoader);
+const icons = registerFontFamily(IconLoader);
 const data = Utils.mock(10).graphin();
 
 data.nodes.forEach((node) => {
@@ -31,15 +22,4 @@ data.nodes.forEach((node) => {
     },
   };
 });
-
-const App = () => {
-  return (
-    <div className="App">
-      <Graphin data={data}></Graphin>
-    </div>
-  );
-};
-
-const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
 ```
